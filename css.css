@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    display: block;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-image: url("pic.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container {
+    position: relative;
+    height: 37.5rem;
+    left: 0rem;
+}
+
+.header {
+    height: 8.75rem;
+    width: 100%;
+    background-image: url("logo.png");
+    background-repeat: no-repeat;
+    background-size: 9.375rem;
+    border-bottom: 2px solid #fafdfc;
+    padding: 3.2rem;
+    font-size: 5rem;
+    color: skyblue;
+}
+
+.btn {
+    position: absolute;
+    top: 0.6rem;
+    right: 4rem;
+    bottom: 12.5rem;
+}
+
+button {
+    color: black;
+    height: 2.2rem;
+    width: 6.25rem;
+    background-image: linear-gradient(orange, white);
+    border-radius: 10px;
+}
+
+#data {
+    width: 99%;
+    height: 28.2rem;
+    text-align: right;
+    justify-content: center;
+    display: flex;
+}
+
+.table {
+    width: 50rem;
+}
+
+table {
+    color: black;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font: 700;
+}
+
+table tr:hover {
+    background-color: lightgray;
+}
+
+img {
+    clip-path: circle();
+}
+
+footer {
+    background: #111;
+    color: white;
+    height: 2%;
+    bottom: -34px;
+}
+
+.welcome {
+    position: relative;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+@media (max-width: 1104px) {
+    html {
+        font-size: 100%;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (max-width: 991px) {
+    html {
+        font-size: 130%;
+        width: 100%;
+        height: 100%;
+    }
+    .header {
+        transform: scale(33%, 80px);
+    }
+}
+
+@media (max-width: 947px) {
+    html {
+        font-size: 100%;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (max-width: 690px) {
+    html {
+        font-size: 80%;
+        width: 100%;
+        height: 100%;
+    }
+    button {
+        width: 120%;
+    }
+    footer {
+        bottom: -195px;
+    }
+}
+
+@media (max-width: 500px) {
+    html {
+        font-size: 60%;
+        width: 100%;
+        height: 150%;
+    }
+    button {
+        width: 130%;
+    }
+    footer {
+        bottom: -390px;
+    }
+}
+
+@media (max-width: 360px) {
+    html {
+        font-size: 45%;
+        width: 100%;
+        height: 180%;
+    }
+    .task {
+        font-size: 20px;
+    }
+    .table {
+        width: fit-content;
+    }
+    button {
+        width: 130%;
+    }
+    footer {
+        width: 120%;
+        font-size: 100%;
+        bottom: -367px;
+    }
+}
